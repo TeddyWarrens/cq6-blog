@@ -22,8 +22,7 @@ console.log('first btn ', document.querySelector(".btn"));
 console.log('every btn', document.querySelectorAll(".btn"));
 let inputElem = document.querySelector("input[type='email']");
 
-// blogDatabase
-const posts = [];
+
 
 // simple form processing
 const form = document.querySelector("form");
@@ -39,15 +38,27 @@ function getAuthor(email) {
 form.addEventListener('submit', (e) => {
     e.preventDefault();  // stop operations until i say so
 
+});
+    // blogDatabase
+const posts = [
+    
 
-    let blogBost = {
+     blogBost = {
         author: getAuthor(email.value),
         title: title.value,
         content: content.value
     }
 
+];
+console.log(posts);
+    //let blogBost = {
+      //  author: getAuthor(email.value),
+       // title: title.value,
+       // content: content.value
+   // }
+
     // console.log('submited', blogBost)
-})
+//})
 
 
 // console.log(getAuthor('armstrongsouljah@gmail.com'))
